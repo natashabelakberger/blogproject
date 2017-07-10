@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link type="text/css" rel="stylesheet" media="screen" href="/assets/stylesheets/application.css">
+  </head>
+
+<body>     
+
+<div class="wrapper">
+
+<div class="top_border">
+<h1></h1>
+</div>
+
+
+<div class="header">
+    <h1> Deep Thoughts With Tash</h1>
+    <!--  -->
+ </div>
+<div class="link">
+<%= link_to 'New Thought', new_article_path%>
+</div>
+<h3>     </h3>
+
+<div class="table_headers">
+<table align="center">
+  <tr>
+    <th>Latest Thoughts</th>
+    <th>Continue Reading</th>
+    <th>Edit</th>
+    <th>Delete</th>
+	   </tr>
+</div>
+
+ 
+<% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= link_to 'Continue Reading', article_path(article) %></td>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+      <td><%= button_to 'Delete', article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>
+<div class="push"></div>
+</div>
+</div>
+
+<div class="footer"
+<h3>Powered by Tash</h3>
+</div>
+</body>
+
+
+
+<% if false %>
+notes section:
+#save this to add back in blog text     <th>Droppin Knowledge</th>
+#save this part two to add back in blog text.  goes in articles do section after title  <td><%= article.text %></td>
+<% end %>

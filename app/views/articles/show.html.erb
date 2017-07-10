@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link type="text/css" rel="stylesheet" media="all" href="/assets/stylesheets/application.css">
+  </head>
+<body>
+	<div class="header">
+		<h1>Deep Thoughts with Tash</h1>
+	</div>
+<div class="blog-header">
+	<h2><strong><%= @article.title %></strong></h2>
+</div>
+
+<div class="blog-content"> 
+<p>
+  <strong><%= @article.text %></strong>
+  </p>
+</div>
+
+<h2>Comments</h2>
+<%= render @article.comments %>
+ 
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_article_path(@article) %> |
+<%= link_to 'Back', articles_path %>
+
+<div class="footer"
+<h3>Powered by Tash</h3>
+</div>
+
+</body>

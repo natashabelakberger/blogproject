@@ -1,0 +1,17 @@
+<h1>The Latest</h1>
+
+<%= form_for :article do |f| %>
+  <p>
+    <%= f.label :Shit that pisses me off %><br>
+    <%= f.text_field :title %>
+  </p>
+ 
+  <p>
+    <%= f.label :text %><br>
+    <%= f.text_area :text %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>a

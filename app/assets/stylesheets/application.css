@@ -1,0 +1,134 @@
+ *= require_self
+ *= require_tree
+
+
+html, body, h1, h2, h3, p, ol, ul, li, a {
+	border: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: Arial, sans-serif;
+	}
+
+body {
+	background-color: #e3e3e5;
+	font-family: Arial;
+	overflow-y: auto;
+	overflow: scroll;
+}
+
+.top_border {
+	max-width: 100%;
+	height: auto;
+	background: #e3e3e5 url('yoga.jpg') center center no-repeat;
+	padding: 150px;
+	margin-bottom: 10px;
+
+}
+
+.header {
+	/* image 'background: #6f93ce url('header_image.png') center center/cover no-repeat ;'*/
+	border-style: solid;
+	border-color: #2c2d2d;
+	padding: 10px 10px 10px 10px;
+	margin-bottom: 1cm;
+}
+
+.header h1 {
+	text-align: center;
+	color: #2c2d2d;
+	}
+
+.link {
+	text-align: center;
+	font-size: 40px;
+	font-family: Arial;
+
+}
+
+.link a {
+	color: #6f93ce;
+	text-decoration: none;
+	}
+.link a:hover {
+	color: white;
+	font-style: italic;
+	}
+
+.table_headers th{
+	border-bottom: 3px solid black;
+	padding: 0 20px 0;
+}
+
+.table_headers th, td {
+	text-align: center;
+}
+
+.blog-title h2{
+	font-family: Arial;
+	display: inline-block;
+	text-align: center;
+	font-size: 32px;
+	color: #2c2d2d;
+}
+.blog_content {
+	font: Arial;
+	display: inline-block;
+	color: blue;
+}
+
+.blog_title p{
+	text-align: center;
+	font-family: Arial
+	color: #2c2d2d
+
+}
+.blog_title label{
+	font-family: Arial;
+	font-size: 36px;
+	color: #2c2d2d;
+
+}
+.blog_title input{
+	width: 20cm;
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.blog_input p{
+	text-align: center;
+	font-family: Arial;
+}
+
+.blog_input label{
+	font-size: 28px;
+	color: #2c2d2d;
+}
+
+.blog_input textarea{
+	width: 20cm;
+	height: 20cm;
+	font-size: 20px;
+	text-align: center;
+}
+  .submit_button input[type=submit]{
+  	float: center;
+  	width: 100%;
+  }
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1px;
+  background-color: #efefef;
+  text-align: center;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -30px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+	height: 30px; /* .push must be the same height as .footer 
