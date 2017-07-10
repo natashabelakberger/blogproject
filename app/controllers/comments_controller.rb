@@ -2,6 +2,7 @@ class CommentsController < ApplicationController
   
   'http_basic_authenticate_with name: "Tash", password: "isthebest", only: :destroy'
 
+  #testing git push
   def create
     @article = Article.find(params[:article_id])
     @comment = @article.comments.create(comment_params)
